@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - Gráfica Oliveira</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+<h2>Gráfica Oliveira</h2>
+<button onclick="logout()">Sair</button>
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+<div class="card">
+<h3>Faturamento</h3>
+<p id="faturamento">R$ 0</p>
+</div>
+
+<div class="card">
+<h3>Pedidos</h3>
+<p id="totalPedidos">0</p>
+</div>
+
+<div class="card">
+<h3>Não Pagos</h3>
+<p id="naoPagos">0</p>
+</div>
+</div>
+
+<canvas id="graficoVendas"></canvas>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
